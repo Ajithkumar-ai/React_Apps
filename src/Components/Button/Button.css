@@ -1,0 +1,7 @@
+.numberbutton{
+    border: 2px solid black;
+    width: 5rem;
+    height: 5rem;
+    background-color: gray;
+    border-radius: 20px;
+}

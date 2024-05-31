@@ -1,0 +1,13 @@
+.displaybox{
+    padding-left: 36px;
+    padding-top: 40px;
+}
+.outputbox{
+    width: 25rem;
+    height: 5rem;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.outputvalue{
+    size: 3rem;
+}

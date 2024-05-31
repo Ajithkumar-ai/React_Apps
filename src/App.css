@@ -1,0 +1,15 @@
+.header{
+  text-align: center;
+}
+.displayflex{
+  display: flex;
+  justify-content: center;
+}
+.buttonflex{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.buttongroup{
+  margin-top: 2rem;
+}
