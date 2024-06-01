@@ -23,6 +23,10 @@ function App() {
   const onClickHandler=(number)=>{
     if((number==='+'||number==='-') && first.current) {
       performCalculation(first,second,operator);
+      let displayValue = '';
+      if(first.current && second.current){displayValue=(first.current + number+ second.current).toString();}
+      else if(first.current && !second.current){displayValue=(first.current + number).toString();}
+      setValue(displayValue);
       operator.current=number;
     }
     else if(number === '=') {
@@ -41,12 +45,15 @@ function App() {
         }
         else if(!second.current && operator.current) {
           second.current=parseInt(number.toString());
+          let displayValue = (first.current+operator.current+second.current).toString();
+          setValue(displayValue);
         }
         else if(second.current && operator.current)
         {
           let num = second.current.toString() + number.toString();
           second.current =  parseInt(num);
-          setValue(second.current);
+          let displayValue = (first.current+operator.current+second.current).toString();
+          setValue(displayValue);
         }
     }
   };

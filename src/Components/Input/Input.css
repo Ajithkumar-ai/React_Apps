@@ -7,6 +7,9 @@
     height: 5rem;
     border: 2px solid black;
     border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 .outputvalue{
     size: 3rem;
